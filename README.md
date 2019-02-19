@@ -12,6 +12,8 @@ mim app install cli-app-worker
 
 ## Perintah
 
+Perintah-perintah berikut bisa dijalankan di folder aplikasi.
+
 ```bash
 mim app worker start
 mim app worker stop
