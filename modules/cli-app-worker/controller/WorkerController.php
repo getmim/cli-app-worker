@@ -36,9 +36,8 @@ class WorkerController extends \CliApp\Controller
 
     public function startAction() {
         $here = $this->canRunHere();
-        $cmd = 'php index.php worker start';
-
-        echo `$cmd`;
+        `php index.php worker start > /dev/null 2>&1 & echo $!`;
+        Bash::echo('Started');
     }
 
     public function statusAction() {
